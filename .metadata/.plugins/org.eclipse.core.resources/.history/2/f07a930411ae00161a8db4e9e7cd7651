@@ -1,0 +1,16 @@
+package userInterface;
+
+import javax.swing.*;
+
+public class AboutInfo {
+	
+	public AboutInfo(JFrame parent){
+		initComponents(parent);
+	}
+	
+	private void initComponents(JFrame parent){
+		String message = new String("INFO");
+		JOptionPane.showMessageDialog(parent, message, "About", JOptionPane.INFORMATION_MESSAGE);
+	}
+
+}

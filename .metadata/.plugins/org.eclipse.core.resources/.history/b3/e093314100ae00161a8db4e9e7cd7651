@@ -1,0 +1,25 @@
+package quest;
+
+import javax.swing.*;
+
+public class Quest {
+	
+	private JFrame frame;
+	private JMenuBar menuBar;
+	private JPanel panel;
+	
+	private JMenu fileMenu;
+	
+	private JMenu settingsMenu;
+	
+	private JMenu helpMenu;
+	
+	public Quest(){
+		initComponents();
+	}
+	
+	private void initComponents(){
+		
+	}
+	
+}
