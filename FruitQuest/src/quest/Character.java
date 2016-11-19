@@ -31,6 +31,12 @@ public class Character {
 		vitaminC, icePack, basket, baggie, freshlyPicked, sugar
 	}
 
+	//is character a thing?
+	private boolean isValid = false;
+
+
+	//img URL
+	private String url = null;
 	//the type of the fruit to pass into the charType function
 	private String myFruit = null;
 	//fruit attributes
@@ -51,7 +57,6 @@ public class Character {
 		
 	}
 
-	
 
 	private void initComponents() {
 
@@ -69,6 +74,8 @@ public class Character {
 				tartness = 2;
 				bruiseResist = 2;
 				shelfLife = 10;
+				isValid = true;
+				url = "./assets/fruits/apple.PNG";
 				break;
 
 			case "banana":
@@ -77,6 +84,8 @@ public class Character {
 				tartness = 2;
 				bruiseResist = 2;
 				shelfLife = 10;
+				isValid = true;
+				url = "./assets/fruits/banana.PNG";
 				break;
 
 			case "orange":
@@ -85,6 +94,8 @@ public class Character {
 				tartness = 2;
 				bruiseResist = 3;
 				shelfLife = 10;
+				isValid = true;
+				url = "./assets/fruits/orange.PNG";
 				break;
 
 			case "pear":
@@ -93,6 +104,8 @@ public class Character {
 				tartness = 3;
 				bruiseResist  = 2;
 				shelfLife = 10;
+				isValid = true;
+				url = "./assets/fruits/pear.PNG";
 				break;
 
 			case "peach":
@@ -101,45 +114,92 @@ public class Character {
 				tartness = 2;
 				bruiseResist = 1;
 				shelfLife = 10;
+				isValid = true;
+				url = "./assets/fruits/peach.PNG";
 				break;
 		}
 
 	}
 
-	public String getMyFruit() {
-		return myFruit;
-	}public void setMyFruit(String myFruit) {
-		this.myFruit = myFruit;
-	}public int getRipeness() {
-		return ripeness;
-	}public void setRipeness(int ripeness) {
-		this.ripeness = ripeness;
-	}public int getSweetness() {
-		return sweetness;
-	}public void setSweetness(int sweetness) {
-		this.sweetness = sweetness;
-	}public int getTartness() {
-		return tartness;
-	}public void setTartness(int tartness) {
-		this.tartness = tartness;
-	}public int getBruiseResist() {
-		return bruiseResist;
-	}public void setBruiseResist(int bruiseResist) {
-		this.bruiseResist = bruiseResist;
-	}public int getShelfLife() {
-		return shelfLife;
-	}public void setShelfLife(int shelfLife) {
-		this.shelfLife = shelfLife;
-	}public int getLevel() {
-		return level;
-	}public void setLevel(int level) {
-		this.level = level;
-	}public String[] getItems() {
-		return items;
-	}public void setItems(String[] items) {
-		this.items = items;
+	public boolean isValid() {
+		return isValid;
 	}
 
+	public void setValid(boolean valid) {
+		isValid = valid;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getMyFruit() {
+		return myFruit;
+	}
+
+	public void setMyFruit(String myFruit) {
+		this.myFruit = myFruit;
+	}
+
+	public int getRipeness() {
+		return ripeness;
+	}
+
+	public void setRipeness(int ripeness) {
+		this.ripeness = ripeness;
+	}
+
+	public int getSweetness() {
+		return sweetness;
+	}
+
+	public void setSweetness(int sweetness) {
+		this.sweetness = sweetness;
+	}
+
+	public int getTartness() {
+		return tartness;
+	}
+
+	public void setTartness(int tartness) {
+		this.tartness = tartness;
+	}
+
+	public int getBruiseResist() {
+		return bruiseResist;
+	}
+
+	public void setBruiseResist(int bruiseResist) {
+		this.bruiseResist = bruiseResist;
+	}
+
+	public int getShelfLife() {
+		return shelfLife;
+	}
+
+	public void setShelfLife(int shelfLife) {
+		this.shelfLife = shelfLife;
+	}
+
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+	public String[] getItems() {
+		return items;
+	}
+
+	public void setItems(String[] items) {
+		this.items = items;
+	}
 
 
 }
