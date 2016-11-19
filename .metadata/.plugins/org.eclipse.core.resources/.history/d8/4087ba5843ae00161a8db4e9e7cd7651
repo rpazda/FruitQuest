@@ -119,8 +119,8 @@ public class Quest {
 		lowerPanel.add(mainMenuButtons, "MAINMENUBUTTONS");
 		lowerPanel.add(characterCreateButtons, "CHARCREATEBUTTONS");
 		lowerPanel.add(inGameButtons, "INGAMEBUTTONS");
-		mainMenuButtons.add(createCharacterButton);
 		mainMenuButtons.add(startButton);
+		mainMenuButtons.add(createCharacterButton);
 		startButton.addActionListener(new BeginQuestAction());
 		createCharacterButton.addActionListener(new CreateCharacterAction());
 		
@@ -222,7 +222,7 @@ public class Quest {
 			//showMainMenuButtons(false);
 			panelLayout.show(mainPanel, "CREATECHARACTERVIEW");
 			buttonLayout.show(lowerPanel, "CHARCREATEBUTTONS");
-			character =  new CreateCharacter(createCharacterView, characterCreateButtons);
+			character =  new CreateCharacter();
 			
 		}
 	}

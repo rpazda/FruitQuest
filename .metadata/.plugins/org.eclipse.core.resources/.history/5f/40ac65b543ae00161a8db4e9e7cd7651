@@ -15,16 +15,12 @@ import javax.swing.JTextField;
 
 public class CreateCharacter {
 	
-	public JComboBox classesSelect;
-	public JLabel selectedClass = new JLabel();
-	
 	public CreateCharacter(JPanel panel, JPanel buttons){
 		
-		String[] classStrings = {"Apple", "Orange", "Banana", "Pear", "Peach"};
-		classesSelect = new JComboBox(classStrings);
-		classesSelect.addActionListener(new selectCharacterAction());
-		panel.add(classesSelect);
-		panel.add(selectedClass);
+		String[] classStrings = {"Apple", "Orang", "Banana", "Pear", "Peach"};
+		JComboBox classes = new JComboBox(classStrings);
+		panel.add(classes);
+		
 	}
 	
 	private void initComponents(JPanel parent, JPanel lowerPanel){
@@ -65,11 +61,6 @@ public class CreateCharacter {
 			if(e.getActionCommand() == "Save Character"){
 				
 			}
-		}
-	}
-	private class selectCharacterAction implements ActionListener{
-		public void actionPerformed(ActionEvent e){
-			selectedClass = (JLabel) classesSelect.getSelectedItem();
 		}
 	}
 }

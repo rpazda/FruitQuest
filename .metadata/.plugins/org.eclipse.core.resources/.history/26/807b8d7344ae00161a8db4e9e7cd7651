@@ -119,8 +119,8 @@ public class Quest {
 		lowerPanel.add(mainMenuButtons, "MAINMENUBUTTONS");
 		lowerPanel.add(characterCreateButtons, "CHARCREATEBUTTONS");
 		lowerPanel.add(inGameButtons, "INGAMEBUTTONS");
-		mainMenuButtons.add(createCharacterButton);
 		mainMenuButtons.add(startButton);
+		mainMenuButtons.add(createCharacterButton);
 		startButton.addActionListener(new BeginQuestAction());
 		createCharacterButton.addActionListener(new CreateCharacterAction());
 		
