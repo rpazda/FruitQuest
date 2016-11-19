@@ -4,7 +4,6 @@ INDEX VERSION 1.127+C:\Users\George\Documents\GitHub\FruitQuest\.metadata\.plugi
 2486087126.index
 2193799835.index
 834584462.index
-2047581088.index
 2743915309.index
 4004133052.index
 1065832147.index

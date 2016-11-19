@@ -50,9 +50,17 @@ public class Character {
 		initComponents();
 		
 	}
+	
+<<<<<<< HEAD
+	private void initComponents(){
+		
+	
+	}
 
 	
-
+	
+	
+=======
 	private void initComponents() {
 
 		//Initialize character properties
@@ -140,6 +148,6 @@ public class Character {
 		this.items = items;
 	}
 
-
+>>>>>>> ab7b879372c01a87dba4c2d59dcb918bb09a4c96
 
 }
