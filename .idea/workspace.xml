@@ -21,56 +21,33 @@
     <favorites_list name="FruitQuest" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FruitQuest.java" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FruitQuest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FruitQuest/src/FruitQuest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Character.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Quest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FruitQuest/src/quest/Quest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FruitQuest/src/quest/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
-              <folding>
-                <element signature="e#1714#1715#0" expanded="true" />
-                <element signature="e#1735#1736#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1804#1805#0" expanded="true" />
-                <element signature="e#1830#1831#0" expanded="true" />
-                <element signature="e#1852#1853#0" expanded="true" />
-                <element signature="e#1891#1892#0" expanded="true" />
-                <element signature="e#1922#1923#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#1972#1973#0" expanded="true" />
-                <element signature="e#2013#2014#0" expanded="true" />
-                <element signature="e#2046#2047#0" expanded="true" />
-                <element signature="e#2072#2073#0" expanded="true" />
-                <element signature="e#2094#2095#0" expanded="true" />
-                <element signature="e#2133#2134#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2194#2195#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2267#2268#0" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
-                <element signature="e#2333#2334#0" expanded="true" />
-                <element signature="e#2356#2357#0" expanded="true" />
-                <element signature="e#2397#2398#0" expanded="true" />
-                <element signature="e#2430#2431#0" expanded="true" />
-                <element signature="e#2453#2454#0" expanded="true" />
-                <element signature="e#2472#2473#0" expanded="true" />
-                <element signature="e#2505#2506#0" expanded="true" />
-                <element signature="e#2530#2531#0" expanded="true" />
-                <element signature="e#2558#2559#0" expanded="true" />
-                <element signature="e#2577#2578#0" expanded="true" />
-                <element signature="e#2615#2616#0" expanded="true" />
-                <element signature="e#2640#2641#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1581">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -180,6 +156,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -416,6 +393,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -581,6 +559,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -608,15 +592,16 @@
       <option name="presentableId" value="Default" />
       <updated>1479542656748</updated>
       <workItem from="1479542658778" duration="2680000" />
+      <workItem from="1479545670209" duration="913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2680000" />
+    <option name="totallyTimeSpent" value="3593000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -624,18 +609,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23343849" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23343849" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909224" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909224" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -671,42 +656,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FruitQuest/src/quest/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
-          <folding>
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1735#1736#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1804#1805#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-            <element signature="e#1922#1923#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
-            <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2133#2134#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
-            <element signature="e#2333#2334#0" expanded="true" />
-            <element signature="e#2356#2357#0" expanded="true" />
-            <element signature="e#2397#2398#0" expanded="true" />
-            <element signature="e#2430#2431#0" expanded="true" />
-            <element signature="e#2453#2454#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2505#2506#0" expanded="true" />
-            <element signature="e#2530#2531#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2577#2578#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FruitQuest/src/quest/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FruitQuest/src/quest/Quest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FruitQuest/src/FruitQuest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
