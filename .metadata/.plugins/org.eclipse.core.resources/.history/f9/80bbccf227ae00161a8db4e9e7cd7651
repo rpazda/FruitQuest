@@ -1,0 +1,22 @@
+package quest;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Character {
+	
+	public Character(JPanel parent){
+		initComponents();
+		
+		parent.removeAll(); //Clear contents of panel to display creation menu
+		parent.repaint();
+	}
+	
+	private void initComponents(){
+		
+		//Initialize character properties
+		
+	}
+	
+
+}

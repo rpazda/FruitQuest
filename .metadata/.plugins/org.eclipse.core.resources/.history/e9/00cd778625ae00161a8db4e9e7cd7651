@@ -1,0 +1,18 @@
+package quest;
+
+import javax.swing.JFrame;
+
+public class Character {
+	
+	public Character(JFrame parent){
+		initComponents();
+	}
+	
+	private void initComponents(){
+		
+		//Initialize character properties
+		
+	}
+	
+
+}

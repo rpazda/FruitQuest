@@ -1,0 +1,259 @@
+package quest;
+
+//Import Java libraries
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+//Import app components
+import userInterface.*;
+
+public class Quest {
+	
+	public CreateCharacter character;
+	
+	public JFrame frame;
+	private JMenuBar menuBar;
+	
+	public JPanel mainPanel;	//Main view card panel
+	public JPanel lowerPanel;	//Button bar card panel
+	
+	public JPanel frontPage;			//Front page card
+	public JPanel gameView;				//Game view card
+	public JPanel settingsView;			//Settings view card
+	public JPanel createCharacterView;	//Character creation card view
+	
+	public JPanel mainMenuButtonPanel;	//Main menu buttons card
+	public JPanel gameButtonPanel;		//In game buttons card
+	
+	private JMenu fileMenu;
+	private JMenuItem exit;
+	private JMenuItem loadGame;
+	private JMenuItem saveGame;
+	
+	private JMenu settingsMenu;
+	private JMenuItem settings;
+	
+	private JMenu helpMenu;
+	private JMenuItem help;
+	private JMenuItem about;
+	
+	public JPanel mainMenuButtons;
+	public JPanel characterCreateButtons;
+	public JPanel inGameButtons;
+	
+	//Main Menu Buttons
+	private JButton startButton;
+	private JButton createCharacterButton;
+	
+	//Character create buttons
+	private JButton cancelCharCreateButton;
+	
+	public BorderLayout layout;
+	public CardLayout panelLayout;
+	public CardLayout buttonLayout;
+	
+	public Quest(){
+		initComponents();
+	}
+	
+	
+	private void initComponents(){
+		
+		//set layout
+		layout = new BorderLayout();
+		panelLayout = new CardLayout();
+		buttonLayout = new CardLayout();
+		
+		//Initialize JFrame
+		frame = new JFrame("FruitQuest");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(800, 600);
+		
+		//Create and add menu bar
+		menuBar = new JMenuBar();
+		frame.add(menuBar,layout.NORTH);
+		
+		//Create, populate, and add main panel (center)
+		mainPanel = new JPanel(panelLayout);
+		
+		frame.add(mainPanel, layout.CENTER);
+		//panelLayout.show(mainPanel, "GAMEVIEW");
+		panelLayout.show(mainPanel, "FRONTPAGE");	//Sets mainPanel to display the panel with string name
+		mainPanel.setBackground(Color.WHITE);
+		
+		//Create cards for main layout
+		frontPage = new JPanel();
+		frontPage.add(new JLabel(new ImageIcon("./assets/title.png")));
+		gameView = new JPanel();
+		settingsView = new JPanel();
+		createCharacterView = new JPanel();
+		mainPanel.add(frontPage, "FRONTPAGE");
+		mainPanel.add(gameView, "GAMEVIEW");
+		mainPanel.add(settingsView, "SETTINGSVIEW");
+		mainPanel.add(createCharacterView, "CREATECHARACTERVIEW");
+		
+		//Create main buttons
+		createCharacterButton = new JButton("Create Character");
+		startButton = new JButton("Begin Quest!");
+		startButton.setMaximumSize(new Dimension(200,50));
+		
+		//Create panels for button pane
+		mainMenuButtons = new JPanel();
+		characterCreateButtons = new JPanel();
+		inGameButtons = new JPanel();
+		
+		//Create lower panel for buttons
+		lowerPanel = new JPanel(buttonLayout);
+		
+		//Create char create buttons
+		cancelCharCreateButton = new JButton("Cancel");
+		cancelCharCreateButton.addActionListener(new CancelCharCreateAction());
+		characterCreateButtons.add(cancelCharCreateButton);
+		
+		//Add buttons to lower panel
+		lowerPanel.add(mainMenuButtons, "MAINMENUBUTTONS");
+		lowerPanel.add(characterCreateButtons, "CHARCREATEBUTTONS");
+		lowerPanel.add(inGameButtons, "INGAMEBUTTONS");
+		mainMenuButtons.add(startButton);
+		mainMenuButtons.add(createCharacterButton);
+		startButton.addActionListener(new BeginQuestAction());
+		createCharacterButton.addActionListener(new CreateCharacterAction());
+		
+		buttonLayout.show(lowerPanel, "MAINMENUBUTTONS");
+		
+		//Add button panel to bottom of frame
+		frame.add(lowerPanel,layout.SOUTH);
+		
+		//Build file menu
+		fileMenu = new JMenu("File");
+		fileMenu.setMnemonic('F');
+		
+			loadGame = new JMenuItem("Load Game");
+			loadGame.addActionListener(new FileMenuAction());
+			fileMenu.add(loadGame);
+			
+			saveGame = new JMenuItem("Save Game");
+			saveGame.addActionListener(new FileMenuAction());
+			fileMenu.add(saveGame);
+		
+			exit = new JMenuItem("Exit");
+			exit.addActionListener(new FileMenuAction());
+			fileMenu.add(exit);
+			
+		//Build settings menu
+		settingsMenu = new JMenu("Settings");
+		settingsMenu.setMnemonic('S');
+		
+			settings = new JMenuItem("Settings");
+			settings.addActionListener(new SettingsMenuAction());
+			settingsMenu.add(settings);
+		
+		//Build help menu
+		helpMenu = new JMenu("Help");
+		helpMenu.setMnemonic('H');
+		
+			JMenuItem help = new JMenuItem("Help");
+			help.addActionListener(new HelpMenuAction());
+			helpMenu.add(help);
+			
+			JMenuItem about = new JMenuItem("About");
+			about.addActionListener(new HelpMenuAction());
+			helpMenu.add(about);
+		
+		//Add all menus to menu bar
+		menuBar.add(fileMenu);
+		menuBar.add(settingsMenu);
+		menuBar.add(helpMenu);
+		
+		//Display UI
+		frame.setVisible(true);
+		frame.validate();
+		frame.repaint();
+		
+	}
+	
+	private class FileMenuAction implements ActionListener{
+		public void actionPerformed(ActionEvent e)
+		{
+			//panel.removeAll();
+			
+			if(e.getActionCommand() == "Exit")
+			{
+				System.exit(0);
+			}
+			else if (e.getActionCommand() == "Load Game"){
+				
+			}
+			else if(e.getActionCommand() == "Save Game"){
+				
+			}
+			/*else if(e.getActionCommand() == ""){
+				
+			}*/
+		}
+	}
+	
+	private class SettingsMenuAction implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			if(e.getActionCommand() == "Settings"){
+				
+			}
+		}
+	}
+	
+	private class HelpMenuAction implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			if(e.getActionCommand() == "Help"){
+				HelpInfo help = new HelpInfo(frame);
+			}
+			else if(e.getActionCommand() == "About"){
+				AboutInfo about = new AboutInfo(frame);
+			}
+		}
+	}
+	
+	private class CreateCharacterAction implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			showMainMenuButtons(false);
+			panelLayout.show(mainPanel, "CREATECHARACTERVIEW");
+			buttonLayout.show(lowerPanel, "CHARCREATEBUTTONS");
+			character =  new CreateCharacter();
+			
+		}
+	}
+	
+	private class CancelCharCreateAction implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			panelLayout.show(mainPanel, "FRONTPAGE");
+			buttonLayout.show(lowerPanel, "MAINMENUBUTTONS");
+		}
+	}
+	
+	private class BeginQuestAction implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			showMainMenuButtons(false);
+			panelLayout.show(mainPanel, "GAMEVIEW");
+			buttonLayout.show(lowerPanel, "INGAMEBUTTONS");
+			
+			Game game = new Game(frame);
+		}
+	}
+	
+	public void showMainMenuButtons(boolean bool){
+		
+		if(bool){
+			createCharacterButton.setVisible(true);
+			startButton.setVisible(true);
+		}else{
+			createCharacterButton.setVisible(false);
+			startButton.setVisible(false);
+		}
+		
+	}
+	
+}
