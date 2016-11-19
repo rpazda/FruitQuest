@@ -45,63 +45,52 @@ public class Quest {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800, 600);
 		
-		//Create and add menu bar
 		menuBar = new JMenuBar();
 		frame.add(menuBar,layout.NORTH);
 		
-		//Create, populate, and add main panel (center)
 		mainPanel = new JPanel();
 		mainPanel.add(new JLabel(new ImageIcon("./assets/title.png")) ,layout.CENTER);
 		frame.add(mainPanel);
 		mainPanel.setBackground(Color.WHITE);
 		
-		//Create main buttons
 		createCharacterButton = new JButton("Create Character");
+		
 		startButton = new JButton("Begin Quest!");
 		startButton.setMaximumSize(new Dimension(200,50));
 		
-		//Create lower panel for buttons
 		JPanel lowerPanel = new JPanel();
 		
-		//Add buttons to lower panel
 		lowerPanel.add(createCharacterButton, lowerPanel);
-		createCharacterButton.addActionListener(new CreateCharacterAction());
 		lowerPanel.add(startButton, lowerPanel);
-		startButton.addActionListener(new BeginQuestAction());
 		
-		//Add button panel to bottom of fram
 		frame.add(lowerPanel,layout.SOUTH);
 		
-		//Build file menu
 		fileMenu = new JMenu("File");
 		fileMenu.setMnemonic('F');
 		
-			exit = new JMenuItem("Exit");
-			exit.addActionListener(new FileMenuAction());
-			fileMenu.add(exit);
-			
-		//Build settings menu
+		exit = new JMenuItem("Exit");
+		exit.addActionListener(new FileMenuAction());
+		fileMenu.add(exit);
+		
 		settingsMenu = new JMenu("Settings");
 		settingsMenu.setMnemonic('S');
 		
-		//Build help menu
 		helpMenu = new JMenu("Help");
 		helpMenu.setMnemonic('H');
 		
-			JMenuItem help = new JMenuItem("Help");
-			help.addActionListener(new HelpMenuAction());
-			helpMenu.add(help);
-			
-			JMenuItem about = new JMenuItem("About");
-			about.addActionListener(new HelpMenuAction());
-			helpMenu.add(about);
+		JMenuItem help = new JMenuItem("Help");
+		help.addActionListener(new HelpMenuAction());
+		helpMenu.add(help);
 		
-		//Add all menus to menu bar
+		JMenuItem about = new JMenuItem("About");
+		about.addActionListener(new HelpMenuAction());
+		helpMenu.add(about);
+		
 		menuBar.add(fileMenu);
 		menuBar.add(settingsMenu);
 		menuBar.add(helpMenu);
 		
-		//Display UI
+		
 		frame.setVisible(true);
 		frame.validate();
 		frame.repaint();
@@ -131,18 +120,6 @@ public class Quest {
 			else if(e.getActionCommand() == "About"){
 				AboutInfo about = new AboutInfo(frame);
 			}
-		}
-	}
-	
-	private class CreateCharacterAction implements ActionListener{
-		public void actionPerformed(ActionEvent e){
-			
-		}
-	}
-	
-	private class BeginQuestAction implements ActionListener{
-		public void actionPerformed(ActionEvent e){
-			
 		}
 	}
 	
